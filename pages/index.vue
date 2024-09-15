@@ -1,14 +1,6 @@
 <template>
-  <div class="index">
-
-  </div>
+	<p>diff</p>
 </template>
+<script setup lang="ts"></script>
 
-<script setup lang="ts">
-
-</script>
-
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

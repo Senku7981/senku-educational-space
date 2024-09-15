@@ -1,0 +1,53 @@
+{
+	"root": true,
+	"parser": "vue-eslint-parser",
+	"parserOptions": {
+		"parser": "@typescript-eslint/parser",
+		"sourceType": "module"
+	},
+	"plugins": ["@typescript-eslint"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended",
+		"plugin:vue/vue3-recommended",
+		"prettier"
+	],
+	"rules": {
+		"no-empty-function": "off",
+		"@typescript-eslint/no-empty-function": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/ban-types": "off",
+		"@typescript-eslint/no-unused-vars": ["off"],
+		"@typescript-eslint/explicit-function-return-type": ["off"],
+		"@typescript-eslint/ban-ts-comment": "off",
+		"@typescript-eslint/no-this-alias": "off",
+		"indent": [
+			"off", 
+			"tab",
+			{ 
+				"SwitchCase": 1
+			}
+		],
+		"vue/no-v-html": "off",
+		"vue/html-indent": ["off", "tab"],
+		"vue/multi-word-component-names": ["off"],
+		"vue/no-mutating-props": "off",
+		"vue/require-prop-types": "off",
+		"vue/require-default-prop": "off",
+		"vue/require-explicit-emits": "off",
+		"prettier/prettier": [
+			"error",
+			{
+				"singleQuote": true,
+				"useTabs": true,
+				"semi": true,
+				"trailingComma": "all",
+				"bracketSpacing": true,
+				"printWidth": 90,
+				"endOfLine": "auto"
+			}
+		]
+	}
+}
