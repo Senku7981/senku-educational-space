@@ -1,0 +1,23 @@
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin font($fontWeight, $fontSize, $lineHeight) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
